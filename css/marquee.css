@@ -1,0 +1,158 @@
+
+.marquee-container{
+    height: 560px;
+    margin-right: 6rem;
+    overflow: hidden;
+}
+
+.marquee-container::after {
+    left: 0;
+    bottom: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.marquee-container::after, .marquee-container::before {
+    background: -webkit-gradient(linear,left top,left bottom, from(#fff), to(hsla(0,0%,100%,0)));
+    background: -webkit-linear-gradient(top,#fff,hsla(0,0%,100%,0));
+    background: linear-gradient(180deg,#fff 0,hsla(0,0%,100%,0));
+    content: "";
+    height: 50px;
+    position: absolute;
+    width: 30%;
+    z-index: 2;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Marquee {
+  background:#fafafa;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 1em;
+  color: #353535;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+    margin: 15px auto;
+}
+.Marquee-content {
+  flex-direction: column;
+  display: flex;
+  -webkit-animation: marquee 10s linear infinite running;
+  -moz-animation: marquee 10s linear infinite running;
+  -o-animation: marquee 10s linear infinite running;
+  -ms-animation: marquee 10s linear infinite running;
+  animation: marquee 10s linear infinite running;
+}
+.Marquee-content:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.Marquee-tag {
+  width: 100%;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: rgba(255,255,255,0.1);
+  display: inline-block;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.Marquee-tag:hover {
+  background: rgba(255,255,255,0.5);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* @-moz-keyframes marquee {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+} */
+@keyframes marquee {
+  0% {
+    margin-top: 100%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    margin-top: 0%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}

@@ -1,0 +1,184 @@
+@font-face {
+      font-family: Adam;
+      src: url(fonts/Abel-Regular.ttf);
+}
+
+@font-face {
+      font-family: Adamina;
+      src: url(fonts/Adamina-Regular.ttf);
+      font-size: 2.5rem;
+      font-weight: 900;
+}
+
+@font-face {
+      font-family: Alegraya;
+      src: url(fonts/AlegreyaSans-Regular.ttf);
+}
+
+body,
+html {
+      padding: 0;
+      margin: 0;
+      color: #353535;
+      line-height: 27.2px;
+      font-size: 16.5px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+      font-size: 80px;
+      line-height: 82.42px;
+}
+
+h1 {
+      font-family: U8-Bold;
+      font-weight: 700;
+      color: #0c1825;
+}
+
+.rect {
+      transform: translate(39px, 7px);
+      position: absolute;
+      z-index: -7;
+}
+
+.h-txt {
+      visibility: inherit;
+      transform: translate(0px, 0px);
+}
+
+.para {
+      visibility: inherit;
+      transform: translate(0px, 0px);
+      font: 28px Adam bold;
+}
+
+.cre {
+      text-transform: inherit;
+}
+
+@media only screen and (max-width: 576px) {
+      .headerImg {
+            width: 250px;
+            border-radius: 16px;
+            height: 350px;
+      }
+}
+
+.wallet::after {
+      content: "";
+      width: 520px;
+      height: 520px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #90caf9;
+      top: 30%;
+      right: 18%;
+      z-index: -2;
+}
+
+@media only screen and (min-width: 992px) {
+      .headerImg {
+            width: 350px;
+            border-radius: 16px;
+            height: 650px;
+      }
+
+
+
+.headerImg1, .headerImg2 {
+      height: 120px;
+      width: 250px;
+      position: absolute;
+}}
+
+.headerImg1 {
+      left: 52%;
+      top: 34%;
+}
+.headerImg2 {
+      top: 60%;
+      right: 15%;
+}
+
+@media only screen and (min-width: 768px) {
+      .offset {
+            height: 5rem;
+      }
+
+      .offset2 {
+            height: 12rem;
+      }
+      .brand {
+            margin-top: 10rem !important;
+      }
+}
+
+.h3-txt {
+      font-family: U8-Bold;
+}
+
+.h3txt {
+      font-size: 3rem;
+      font-weight: 900;
+}
+
+.htext {
+      font-size: 1.55rem;
+      font-weight: 900;
+      font-family: U8-Bold;
+}
+
+.tage {
+      color: #ec407a;
+      font-size: 1.1rem;
+      background-color: #e1e1e1;
+      font-family: Adamina;
+}
+
+/* .tagep {
+      padding-right: 4rem;
+} */
+
+.h2txt {
+      color: #e1e1e1;
+      font-size: 4rem;
+      font-family: Adamina-Regular;
+      font-weight: 900;
+      padding-right: 3rem;
+}
+
+.ptage {
+      font-size: 1.75rem;
+      font-family: Adam;
+      color: #fafafa;
+      line-height: 1.4;
+      letter-spacing: .1rem;
+}
+
+@media only screen and (max-width: 550px) {
+      .ptage {
+            justify-content: center;
+      }
+}
+
+.meet {
+      color: #e1e1e1;
+      letter-spacing: .2rem;
+}
+
+@media only screen and (min-width: 768px) {
+      .savee {
+            height: 24rem !important;
+      }
+
+      .mb {
+            height: auto;
+      }
+}
+
+/* .last {
+      background-color: rgba(0, 0, 0, 0.05);
+} */
